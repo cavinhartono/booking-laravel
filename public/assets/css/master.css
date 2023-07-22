@@ -72,17 +72,40 @@ body {
     color: var(--black-300);
 }
 
-.btn {
+a {
     text-decoration: none;
+    color: inherit;
+}
+
+.btn {
     position: relative;
     border: none;
     outline: none;
     font-size: var(--rg);
 }
 
+li {
+    list-style-type: none;
+}
+
 .container {
     position: relative;
     width: 100%;
+}
+
+.px-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.px-6 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.py-6 {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .w-full {
@@ -99,6 +122,9 @@ body {
 
 .center {
     justify-content: center;
+}
+
+.items-center {
     align-items: center;
 }
 
@@ -108,4 +134,18 @@ body {
 
 .gap-2 {
     gap: 16px;
+}
+
+.gap-3 {
+    gap: 24px;
+}
+
+#nav .list {
+    color: var(--black-500);
+    opacity: 0.75;
+}
+
+#nav .list.active {
+    color: var(--black-500);
+    opacity: 1;
 }

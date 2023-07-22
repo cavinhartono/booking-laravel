@@ -13,18 +13,42 @@
 
 <body>
   <div class="container">
-    <header class="header">
+    <header class="w-full flex between items-center px-100 py-6">
       <a href="#" class="logo">Indivel</a>
-      <ul class="nav flex gap-1">
-        <li class="list"></li>
-        <li class="list"></li>
-        <li class="list"></li>
+      <ul class="flex gap-3" id="nav">
+        <li class="list active">
+          <a href="#">
+            Home
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            About
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            Contacts
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            Location
+          </a>
+        </li>
       </ul>
-      <div class="action"></div>
+      <div class="action">
+        @if ()
+        <a href="/logout">Logout</a>
+        @else
+        <a href="/auth">Trynow</a>
+        @endif
+      </div>
     </header>
     @yield('content')
   </div>
   @livewireScripts
+  <script src="{{ asset('assets/js/script.js') }}"></script>
   @stack('js')
 </body>
 
