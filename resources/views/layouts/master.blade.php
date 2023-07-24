@@ -17,30 +17,30 @@
       <a href="#" class="subtitle">Indivel</a>
       <ul class="nav" id="nav">
         <li class="list active">
-          <a href="#" class="subtitle">
+          <a href="#">
             Home
           </a>
         </li>
         <li class="list">
-          <a href="#" class="subtitle">
+          <a href="#">
             About
           </a>
         </li>
         <li class="list">
-          <a href="#" class="subtitle">
+          <a href="#">
             Contacts
           </a>
         </li>
         <li class="list">
-          <a href="#" class="subtitle">
+          <a href="#">
             Location
           </a>
         </li>
       </ul>
-      <div class="action">
-        <!-- <a href="/logout">Logout</a> -->
-        <a href="/auth" class="btn primary-border">Trynow</a>
-      </div>
+
+      <!-- <a href="/logout">Logout</a> -->
+      <a href="/auth" class="btn primary-border">Trynow</a>
+
     </header>
     @yield('content')
   </div>
