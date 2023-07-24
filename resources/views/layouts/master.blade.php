@@ -13,36 +13,33 @@
 
 <body>
   <div class="container">
-    <header class="w-full flex between items-center px-100 py-6">
-      <a href="#" class="logo">Indivel</a>
-      <ul class="flex gap-3" id="nav">
+    <header class="header">
+      <a href="#" class="subtitle">Indivel</a>
+      <ul class="nav" id="nav">
         <li class="list active">
-          <a href="#">
+          <a href="#" class="subtitle">
             Home
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="#" class="subtitle">
             About
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="#" class="subtitle">
             Contacts
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="#" class="subtitle">
             Location
           </a>
         </li>
       </ul>
       <div class="action">
-        @if ()
-        <a href="/logout">Logout</a>
-        @else
-        <a href="/auth">Trynow</a>
-        @endif
+        <!-- <a href="/logout">Logout</a> -->
+        <a href="/auth" class="btn primary-border">Trynow</a>
       </div>
     </header>
     @yield('content')
