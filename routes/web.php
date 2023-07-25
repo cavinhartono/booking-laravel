@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\BookingOnline;
+use App\Http\Livewire\Homepage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', BookingOnline::class);
+Route::get('/', Homepage::class);

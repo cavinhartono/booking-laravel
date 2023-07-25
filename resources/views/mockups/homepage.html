@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="container homepage">
+            <div class="bg-homepage">
+                <div class="homepage-details">
+                    <h4 class="subtitle">Find Your Home</h4>
+                    <h1 class="title">Find Your Happy Place With Us</h1>
+                    <a href="#" class="btn primary">Go</a>
+                </div>
+                <img
+                    src="/public/assets/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg"
+                    alt=""
+                    class="homepage-image"
+                />
+                <ul class="homepage-details">
+                    <li class="list">
+                        <h1 class="title"></h1>
+                        <h3 class="subtitle"></h3>
+                    </li>
+                    <li class="list">
+                        <h1 class="title"></h1>
+                        <h3 class="subtitle"></h3>
+                    </li>
+                    <li class="list">
+                        <h1 class="title"></h1>
+                        <h3 class="subtitle"></h3>
+                    </li>
+                </ul>
+            </div>
+            <fieldset class="fieldset">
+                <form class="form" action="">
+                    <div class="input-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="input-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+        <script>
+            let lists = document.querySelectorAll("#nav .list");
+
+            function ActiveLink() {
+                lists.forEach((list) => list.classList.remove("active"));
+                this.classList.add("active");
+            }
+
+            lists.forEach((list) => list.addEventListener("click", ActiveLink));
+
+            const HeaderScroller = () => {
+                return this.scrollY >= 200
+                    ? document.querySelector("header").classList.add("scroller")
+                    : document
+                          .querySelector("header")
+                          .classList.remove("scroller");
+            };
+
+            window.addEventListener("scroll", HeaderScroller);
+        </script>
+    </body>
+</html>
