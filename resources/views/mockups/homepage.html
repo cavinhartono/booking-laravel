@@ -7,46 +7,57 @@
         <title>Document</title>
     </head>
     <body>
-        <section class="container homepage">
-            <div class="bg-homepage">
-                <div class="homepage-details">
-                    <h4 class="subtitle">Find Your Home</h4>
-                    <h1 class="title">Find Your Happy Place With Us</h1>
-                    <a href="#" class="btn primary">Go</a>
+        <main class="container">
+            <section class="homepage">
+                <div class="banner">
+                    <div class="bg-homepage">
+                        <div class="homepage-caption">
+                            <h4 class="subtitle">Find Your Home</h4>
+                            <h1 class="title">
+                                Find Your <br />
+                                Happy Place <br />
+                                With Us
+                            </h1>
+                            <a href="#" class="btn primary">Go</a>
+                        </div>
+                        <img
+                            src="/public/assets/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg"
+                            alt=""
+                            class="homepage-image"
+                        />
+                        <ul class="homepage-details">
+                            <li class="list">
+                                <h1 class="title">450+</h1>
+                                <h3 class="subtitle">Property Ready</h3>
+                            </li>
+                            <li class="list">
+                                <h1 class="title">200</h1>
+                                <h3 class="subtitle">Awards Winning</h3>
+                            </li>
+                            <li class="list">
+                                <h1 class="title">240+</h1>
+                                <h3 class="subtitle">Happy Customer</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <fieldset class="fieldset">
+                        <form class="form" action="">
+                            <div class="input-form">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" />
+                            </div>
+                            <div class="input-form">
+                                <label for="price">Price</label>
+                                <input type="number" id="price" />
+                            </div>
+                            <div class="input-form">
+                                <button class="btn primary">Search</button>
+                            </div>
+                        </form>
+                    </fieldset>
                 </div>
-                <img
-                    src="/public/assets/images/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg"
-                    alt=""
-                    class="homepage-image"
-                />
-                <ul class="homepage-details">
-                    <li class="list">
-                        <h1 class="title"></h1>
-                        <h3 class="subtitle"></h3>
-                    </li>
-                    <li class="list">
-                        <h1 class="title"></h1>
-                        <h3 class="subtitle"></h3>
-                    </li>
-                    <li class="list">
-                        <h1 class="title"></h1>
-                        <h3 class="subtitle"></h3>
-                    </li>
-                </ul>
-            </div>
-            <fieldset class="fieldset">
-                <form class="form" action="">
-                    <div class="input-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" />
-                    </div>
-                    <div class="input-form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" />
-                    </div>
-                </form>
-            </fieldset>
-        </section>
+            </section>
+        </main>
         <script>
             let lists = document.querySelectorAll("#nav .list");
 
