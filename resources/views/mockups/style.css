@@ -229,4 +229,13 @@ input {
     transform: translate(calc(50% / 1.5), -50%);
 }
 
+.view {
+    min-height: 100vh;
+    padding: 124px 0;
+}
+
+.view-details {
+    text-align: center;
+}
+
 /* Homepage */
