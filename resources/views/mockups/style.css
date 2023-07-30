@@ -238,4 +238,18 @@ input {
     text-align: center;
 }
 
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--md);
+}
+
+.card .list {
+    padding: var(--sm);
+    overflow: hidden;
+    border-radius: var(--sm);
+    transform: skewX(100px);
+}
+
 /* Homepage */
